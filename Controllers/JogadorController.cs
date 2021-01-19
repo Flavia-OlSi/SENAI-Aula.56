@@ -12,10 +12,13 @@ namespace Aula_56.Controllers
     {
 
         //Instanciamos Jogador dentro da classe e chamamos uma ViewBag como apoio e retorno para listar os jogadores disponíveis
+        
         Jogador jogadorModel = new Jogador();
-        [Route("Listar")]
+        Equipe equipeModel = new Equipe();
+
         public IActionResult Index()
         {
+            ViewBag.Equipes = equipeModel.ReadAll();
             ViewBag.Jogadores = jogadorModel.ReadAll();
             return View();
         }

@@ -14,8 +14,10 @@ namespace Aula_56.Models
         public string Email {get; set;}
         public string Senha {get; set;}
         
+        
+        public string PATH = "Database/Jogador.csv";
+
         //Esse é um médoto contrutor para gerar um arquivo
-        private const string PATH = "Database/Jogador.csv";
         public Jogador()
         {
             CreateFolderAndFile(PATH);

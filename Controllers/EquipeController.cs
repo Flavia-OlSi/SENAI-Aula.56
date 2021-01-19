@@ -10,7 +10,7 @@ namespace Aula_56.Controllers
     //A Route serve para "interligar" o código a página
     //http://localhost:5000/Equipe - *Lembrando que local host porque estamos rodando na propria maquina, não num dominio
     [Route("Equipe")]
-    //Herdamos essa classe controller, pois tras algumas funcionalidades 
+    //Herdamos essa classe controller para mapear o esse arquivo de controller e para ele entender que o arquivo Index vai carregar uma pagina quando chamar esse endereço
     public class EquipeController : Controller
     {
 
